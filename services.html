@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Services </title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./assets/logo.svg"/>
+</head>
+
+<body>
+    <!--navigation-->
+    <nav>
+        <!--logo-->
+        <a href="#" class="logo">
+            <img src="assets/main-logo.svg"/>
+        </a>
+
+        <!--menu-btn----------->
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+                <li><a href="./temples.html">Temples</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a id = "active" href="./services.html">Services</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!--services----------------------->
+    <section class="services">
+        <!--heading----------->
+        <div class="services-heading">
+            <h2>Reception</h2>
+            <p>
+                Wedding reception accommodations, food services and setup
+            </p>
+        </div>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="./assets/wedding-reception.jpg" alt="wedding-reception">
+                <h2> Wedding Reception </h2>
+                <p>
+                    - 25,000 sq ft <br>
+                    - 25 bedrooms to choose from <br>
+                    - Fully furnished for your wedding <br>
+                </p>
+                <!--btn--------->
+                <!-- <a href="#">Log In</a> -->
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="assets/food.jpg">
+                <h2>Food services</h2>
+                <p>
+                    - Vegan choice <br>
+                    - 24/7 food order and buffet <br>
+                    - One personal special order <br>
+                </p>
+                <!--btn--------->
+                <a href="./contact.html">Contact Us</a>
+            </div>
+        </div>
+
+
+        <div class="services-heading">
+            <h2>Full-time missionary</h2>
+            <p>
+                Missionaries special accomodation
+            </p>
+        </div>
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="assets/missionary.jpg">
+                <h2> Missionaries accomodation</h2>
+                <p>
+                    Click the button for more information about missionary accomodation.
+                </p>
+                <!--btn--------->
+                <a href="./gallery.html">More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer------------->
+    <footer>
+        <a href="#">Temple Inn & Suites</a>
+        <p>&copy; 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </footer>
+
+
+    <!--Javascript--------->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: { 
+                families: ['Poppins']
+            }
+        }); 
+    </script>
+
+</body>
+</html>

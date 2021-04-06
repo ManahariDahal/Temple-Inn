@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temple Inn & Suites </title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gallery/gallery.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./assets/logo.svg"/>
+</head>
+<body>
+    <!--navigation-->
+    <nav>
+        <!--logo-->
+        <a href="#" class="logo">
+            <img src="assets/main-logo.svg"/>
+        </a>
+
+        <!--menu-btn----------->
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+                <li><a href="./temples.html">Temples</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a id = "active" href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="services-heading">
+        <h2>Accomodation</h2>
+    </div>
+    <div class="box-container">
+        <!--box-1-------->
+        <div class="box">
+            <!-- <img src="assets/missionary.jpg"> -->
+            <h2> Missionaries accomodation</h2>
+            <p>
+                We are delighted to host you and the missionaries.
+                <br>
+                Scroll down/click the button to see the suites we offer.
+            </p>
+            <!--btn--------->
+            <a href="#gallery"> Gallery </a>
+        </div>
+    </div>
+    
+
+    <!-- <h1 ">Gallery</h1> -->
+    <section class="gallery" id="gallery">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/1.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/2.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/3.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/4.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/5.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/6.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/7.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/8.jpg">
+            <img loading="lazy" src="./assets/placeholder.png" alt="random image placeholder" data-src="assets/gallery/9.jpg">
+    </section>
+
+
+
+    <!--footer------------->
+    <footer>
+        <a href="#">Temple Inn & Suites</a>
+        <p>&copy; 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </footer>
+
+
+    <!--Javascript--------->
+    <script src="./js/gallery/lazy-load.js"> </script>
+    <script src="./js/gallery/caption.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: { 
+                families: ['Poppins']
+            }
+        }); 
+    </script>
+
+    
+</body>
+</html>

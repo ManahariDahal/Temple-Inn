@@ -1,0 +1,65 @@
+{
+    "temples": 
+    [
+        {
+            "name": "Salt Lake City",
+            "photo": "salt-lake-city.jpeg",
+            "telephone": "123-456-7890",
+            "yearFounded": 1893,
+            "email": "ldschurch@lds.org",
+            "services": "Varies",
+            "ordinanceSchedule": "8 a.m. - 5 p.m.",
+            "sessionSchedule": "Every day",
+            "closure": "27 Dec, 2021",
+            "summary": [
+                "First and the oldest Temple",
+                "Salt Lake City, UT, U.S.A"
+            ]
+        },
+        {
+            "name": "Rexburg",
+            "photo": "rexburg.jpeg",
+            "telephone": "123-456-7890",
+            "yearFounded": 2008,
+            "email": "ldschurch@lds.org",
+            "services": "Varies",
+            "ordinanceSchedule": "8 a.m. - 5 p.m.",
+            "sessionSchedule": "Every day",
+            "closure": "27 Dec, 2022",
+            "summary": [
+                "Near BYU-Idaho",
+                "Rexburg, ID, U.S.A"
+            ]
+        },
+        {
+            "name": "Idaho Falls",
+            "photo": "idaho-falls.jpeg",
+            "telephone": "123-456-7890",
+            "yearFounded": 1945,
+            "email": "ldschurch@lds.org",
+            "services": "Varies",
+            "ordinanceSchedule": "8 a.m. - 5 p.m.",
+            "sessionSchedule": "Every day",
+            "closure": "17 Mar, 2021",
+            "summary": [
+                "10th LDS Temple",
+                "Idaho Falls, ID, U.S.A"
+            ]
+        },
+        {
+            "name": "Provo",
+            "photo": "provo.jpeg",
+            "telephone": "123-456-7890",
+            "yearFounded": 1972,
+            "email": "ldschurch@lds.org",
+            "services": "Varies",
+            "ordinanceSchedule": "8 a.m. - 5 p.m.",
+            "sessionSchedule": "Every day",
+            "closure": "14 June, 2021",
+            "summary": [
+                "17th LDS Temple",
+                "Provo, UT, U.S.A"
+            ]
+        }
+    ]
+}

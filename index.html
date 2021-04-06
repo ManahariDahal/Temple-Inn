@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temple Inn & Suites </title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./assets/logo.svg"/>
+</head>
+
+<body>
+    <section class="main">
+        <!--navigation-->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">
+                <img src="assets/main-logo.svg"/>
+            </a>
+
+            <!--menu-btn----------->
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a id = "active" href="#home">Home</a></li>
+                <li><a href="./temples.html">Temples</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--main-content-->
+        <div class="home-content">
+            <!--text-->
+            <div class="home-text">
+                <h1>Temple Inn & Suites</h1>
+                <p>
+                    Welcome to our Temple Inn & Suites. Thank you for choosing us and hope you have a wonderful
+                    time with us.
+                </p>
+
+                
+            <!--login-btn-->
+            <a href="./reservations.html" class="main-login">Reserve</a>
+            </div>
+            <!--img-->
+            <div class="home-img">
+                <img src="assets/temple-bg.jpg"/>
+            </div>
+        </div>
+
+
+
+        <!--timing------------------->
+        <div class="timing">
+
+            
+            <!--office-time-->
+            <div class="office-time">
+                <p>
+                    The Salt Lake Temple is a temple of The Church of Jesus Christ of Latter-day Saints on Temple Square in Salt Lake City, Utah, United States.
+                </p>
+                <h3>Office Hours</h3>
+                <p>Monday - Firday <span id="blue-text">8:00 AM - 6:00 </span>PM CST
+            </div>
+            <!--office-contact-->
+            <div class="office-number">
+                <h3>Call us</h3>
+                <p>Call <span id="blue-text">1-234-567-8912</span> during business hours.</p>
+                <!-- <a href="./contact.html" class="main-login-2">Contact us</a> -->
+            </div>
+        </div>
+        <!--arrow-->
+        <!-- <div class="arrow"></div>
+        <span class="scroll">Scroll</span> -->
+    </section>
+
+
+    
+    <!--footer------------->
+    <footer>
+        <a href="#">Temple Inn & Suites</a>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1617673017227!5m2!1sen!2sus" 
+        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        <p>&copy; 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </footer>
+
+    <!--Javascript--------->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: { 
+                families: ['Poppins']
+            }
+        }); 
+    </script>
+
+</body>
+</html>

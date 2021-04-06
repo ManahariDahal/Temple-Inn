@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Services </title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reservation/reservation.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./assets/logo.svg"/>
+</head>
+<body>
+
+    <!--navigation-->
+    <nav>
+        <!--logo-->
+        <a href="#" class="logo">
+            <img src="assets/main-logo.svg"/>
+        </a>
+
+        <!--menu-btn----------->
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+                <li><a href="./temples.html">Temples</a></li>
+                <li><a id = "active" href="./reservation.html">Reservation</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <form method="get" class="wrap">
+        <div class="text-header">
+            <h3> Personal Information </h3>
+                <label>
+                    <input minlength="5" type="text" placeholder="Name" pattern="[A-Za-z]{5,}" 
+                                autocomplete="off" required=""/>
+                </label>
+
+                <label>
+                    <input type="email" placeholder="john@gmail.com"/> 
+                </label>
+    
+                <label>
+                    <input type="tel" placeholder="Telephone number" required="" />
+                </label>
+
+                <label>
+                    <input type="text" placeholder="Country" required=""/>
+                </label>
+
+                
+        </div>
+
+        <div class=" text-header storm">
+            <h3> Inn information </h3>
+            <label class="input-head"> Date
+                <input type="date"/> 
+            </label>
+
+            <label class="input-head"> Location
+                <input list="location" name="inn-location" id="inn-location">
+                <datalist id="location">
+                    <option value="Rexburg">
+                    <option value="Salt Lake City">
+                    <option value="Bethesda">
+                    <option value="Provo">
+                </datalist>
+            </label>
+
+
+
+
+            <label class="input-head"> Type of rooms
+                <input list="rooms" name="room" id="room">
+                <datalist id="rooms">
+                    <option value="Luxurious">
+                    <option value="Primr Luxurious">
+                    <option value="Deluxe">
+                    <option value="Prime Deluxe">
+                </datalist>
+            </label>
+
+            <label class="input-head"> How many guests?
+                <input type="range" name="strom severity" min="1" value="5" max="10" id="range"
+                
+                list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"/> 
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
+                <span id="ratingvalue">5</span>
+            </label>
+            
+        </div>
+
+        <div class="add">
+            <h3>Additional Information </h3>
+            <label>
+                <textarea id="info" name="info" rows="8" cols="40"></textarea>
+            </label>
+
+            <label>
+                <input class="btn" type="submit" value="Reserve" onclick="myalert()"/>
+            </label>
+        </div>  
+    </form>
+
+
+    <!--footer------------->
+    <footer>
+        <a href="#">Temple Inn & Suites</a>
+        <p>&copy; 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </footer>
+    
+
+
+
+    <!--Javascript--------->
+    <script src="./js/reservation/reservation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: { 
+                families: ['Poppins']
+            }
+        }); 
+    </script>
+</body>
+</html>
