@@ -2,6 +2,18 @@ form {
     text-align: left;
     margin: 0 auto;
 }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.map {
+    text-align: center;
+}
+
+
 .wrap {
     margin-top: 100px;
     background-color: white;
@@ -100,6 +112,13 @@ footer {
     .storm label input {
         display: block;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 
@@ -114,6 +133,16 @@ footer {
 
     input {
         width: 80%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map {
+        margin-top: 50%;
+        text-align: none;
     }
 
    

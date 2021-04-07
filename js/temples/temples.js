@@ -1,26 +1,89 @@
-const requestURL = './json/temples.json';
-const weatherAPI = 'https://api.openweathermap.org/data/2.5/weather?id=5605242&units=imperial&appid=fbcf836cec761e369e64b49c8b420878';
+const rexburg = 'https://api.openweathermap.org/data/2.5/weather?id=5605242&units=imperial&appid=fbcf836cec761e369e64b49c8b420878';
+const slc = 'https://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&appid=fbcf836cec761e369e64b49c8b420878';
+const idahofalls = 'https://api.openweathermap.org/data/2.5/weather?id=5596475&units=imperial&appid=fbcf836cec761e369e64b49c8b420878';
+const provo = 'https://api.openweathermap.org/data/2.5/weather?id=5780026&units=imperial&appid=fbcf836cec761e369e64b49c8b420878';
 
-
-
-fetch(weatherAPI)
+fetch(rexburg)
     .then(response => response.json())
     .then(jsonObject => {
-        document.getElementById("current").innerHTML = jsonObject.weather[0].description;
-        document.getElementById("temp").innerHTML = Math.ceil(jsonObject.main.temp_min);
-        // document.getElementById("chill").innerHTML = jsonObject.wind.deg;
-        document.getElementById("speed").innerHTML = jsonObject.wind.speed;
-        document.getElementById("humidity").innerHTML = jsonObject.main.humidity; 
-        
-        let temp = document.getElementById('temp').innerHTML;
-        let speed = document.getElementById('speed').innerHTML;
-        let wind_chill = Math.round(35.74 + (0.6215 * temp) - (35.75 * (speed) ** 0.16) + 
-        (0.4275 * temp * ((speed)**0.16))) + "℉";
+        let high = document.createElement("p");
+        let current = document.createElement("p");
+        let div = document.createElement('div');
+        let h3 = document.createElement('h3');
 
-        document.getElementById("chill").innerHTML = wind_chill;
+        h3.innerHTML = "Rexburg";
+        current.innerHTML = "Current temperature:" + Math.ceil(jsonObject.main.temp);
+        high.innerHTML = "Max temperature:" + Math.ceil(jsonObject.main.temp_max);
+
+        div.appendChild(h3);
+        div.appendChild(current);
+        div.appendChild(high);
         
+        document.querySelector('div.cards').appendChild(div);
 })
 
+
+fetch(slc)
+    .then(response => response.json())
+    .then(jsonObject => {
+        let high = document.createElement("p");
+        let current = document.createElement("p");
+        let div = document.createElement('div');
+        let h3 = document.createElement('h3');
+
+        h3.innerHTML = "Salt Lake City";
+        current.innerHTML = "Current temperature:" + Math.ceil(jsonObject.main.temp);
+        high.innerHTML = "Max temperature:" + Math.ceil(jsonObject.main.temp_max);
+
+        div.appendChild(h3);
+        div.appendChild(current);
+        div.appendChild(high);
+        
+        document.querySelector('div.cards').appendChild(div);
+})
+
+fetch(idahofalls)
+    .then(response => response.json())
+    .then(jsonObject => {
+        let high = document.createElement("p");
+        let current = document.createElement("p");
+        let div = document.createElement('div');
+        let h3 = document.createElement('h3');
+
+        h3.innerHTML = "Idaho Falls";
+        current.innerHTML = "Current temperature: " + Math.ceil(jsonObject.main.temp);
+        high.innerHTML = "Max temperature: " + Math.ceil(jsonObject.main.temp_max);
+
+        div.appendChild(h3);
+        div.appendChild(current);
+        div.appendChild(high);
+        
+        document.querySelector('div.cards').appendChild(div);
+})
+
+fetch(provo)
+    .then(response => response.json())
+    .then(jsonObject => {
+        let high = document.createElement("p");
+        let current = document.createElement("p");
+        let div = document.createElement('div');
+        let h3 = document.createElement('h3');
+
+        h3.innerHTML = "Provo";
+        current.innerHTML = "Current temperature: " + Math.ceil(jsonObject.main.temp);
+        high.innerHTML = "Max temperature: " + Math.ceil(jsonObject.main.temp_max);
+
+        div.appendChild(h3);
+        div.appendChild(current);
+        div.appendChild(high);
+        
+        document.querySelector('div.cards').appendChild(div);
+})
+
+
+
+
+const requestURL = './json/temples.json';
 fetch (requestURL)
     .then(function (response) {
         return response.json();
@@ -71,5 +134,7 @@ fetch (requestURL)
 
             document.querySelector('div.cards').appendChild(card).appendChild(div);
         }
+
+        
     })
 
